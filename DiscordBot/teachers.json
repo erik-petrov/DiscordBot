@@ -1,0 +1,16 @@
+﻿{
+  "teachers": [
+    {
+      "name": "julia",
+      "alias": "anglichanka",
+      "screenname": "Julia Voronetskoj",
+      "link": "https://meet.google.com/xmw-hazq-zhx"
+    },
+    {
+      "name": "marina",
+      "alias": "oleinik",
+      "screenname": "Marina Oleinik",
+      "link": "https://moodle.edu.ee/mod/bigbluebuttonbn/view.php?id=1729116"
+    }
+  ]
+}

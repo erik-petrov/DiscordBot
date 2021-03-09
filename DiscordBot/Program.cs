@@ -3,6 +3,10 @@ using DSharpPlus.CommandsNext;
 using DiscordBot.commands;
 using System;
 using System.Threading.Tasks;
+using System.IO;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace DiscordBot
 {
@@ -18,16 +22,16 @@ namespace DiscordBot
             var discord = new DiscordClient(new DiscordConfiguration()
             {
                 //хард код токен - потом убрать.
-                Token = "ODE4MDY5MzgxNjY5OTc4MTUy.YESsew.JnosFeFaXm99YfPAZM5k4I8gkeI",
+                Token = "тут был токен",
                 TokenType = TokenType.Bot
             });
 
-            /*discord.MessageCreated += async (s, e) =>
+            discord.MessageCreated += async (s, e) =>
             {
-                if (e.Message.Content.ToLower().StartsWith("пидр"))
-                    await e.Message.RespondAsync("лёха");
-            };*/
-            //код выше отвечает на пидр
+                if (e.Message.Content.ToLower().StartsWith("макс"))
+                    await e.Message.RespondAsync("хоороший чел");
+            };
+            //код выше отвечает на X слово
 
             var commands = discord.UseCommandsNext(new CommandsNextConfiguration()
             { 
